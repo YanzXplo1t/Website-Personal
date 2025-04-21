@@ -1,0 +1,105 @@
+<html class="scroll-smooth" lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   YanzXplo1t
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+    font-family: 'Press Start 2P', cursive;
+  }
+  /* Glow effect for text */
+  .glow-text {
+    text-shadow:
+      0 0 5px #ff6ec4,
+      0 0 10px #ff6ec4,
+      0 0 20px #ff6ec4,
+      0 0 40px #ff6ec4;
+  }
+  /* Glow effect for icons */
+  .glow-icon {
+    filter: drop-shadow(0 0 6px);
+    transition: filter 0.3s ease;
+  }
+  .glow-icon:hover {
+    filter:
+      drop-shadow(0 0 8px)
+      drop-shadow(0 0 12px);
+    transform: scale(1.1);
+  }
+  /* Smooth pulse animation */
+  @keyframes pulseGlow {
+    0%, 100% {
+      filter: drop-shadow(0 0 6px);
+      transform: scale(1);
+    }
+    50% {
+      filter: drop-shadow(0 0 12px);
+      transform: scale(1.05);
+    }
+  }
+  .pulse-glow {
+    animation: pulseGlow 3s ease-in-out infinite;
+  }
+  /* Blur background image styling */
+  .bg-blur-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: blur(20px) brightness(0.3);
+    z-index: -1;
+    user-select: none;
+  }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center px-6 py-12 relative overflow-hidden">
+  <!-- Background Blur Image -->
+  <img alt="Blurred anime style background with purple and blue hues, featuring abstract shapes and soft glowing lights" class="bg-blur-img" height="1080" id="backgroundBlur" src="https://d.uguu.se/kngMUUMJ.jpg" width="1920"/>
+  <!-- Profile Container -->
+  <div class="flex flex-col items-center space-y-6 max-w-xs w-full">
+   <!-- Profile Photo -->
+   <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-pink-500 shadow-pink-600 shadow-lg pulse-glow" id="profilePhotoContainer">
+    <img alt="Anime style character portrait with purple hair, bright eyes, and a gentle smile, wearing a futuristic outfit" class="w-full h-full object-cover" height="400" id="profilePhoto" src="https://h.uguu.se/euPcLNEC.jpg" width="400"/>
+   </div>
+   <!-- Name -->
+   <h1 class="text-3xl sm:text-4xl text-pink-400 glow-text select-none" id="profileName">
+    Sakura Hoshino
+   </h1>
+   <!-- Social Buttons -->
+   <div class="flex space-x-4 mt-2 w-full justify-center">
+    <!-- WhatsApp -->
+    <a aria-label="WhatsApp" class="flex items-center justify-center w-12 h-12 rounded-full bg-green-600 hover:bg-green-700 shadow-lg shadow-green-600 glow-icon transition transform" href="https://wa.me/6285167298968" rel="noopener noreferrer" target="_blank">
+     <i class="fab fa-whatsapp text-white text-xl">
+     </i>
+    </a>
+    <!-- Telegram -->
+    <a aria-label="Telegram" class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500 hover:bg-blue-600 shadow-lg shadow-blue-500 glow-icon transition transform" href="https://t.me/YanzBotzz" rel="noopener noreferrer" target="_blank">
+     <i class="fab fa-telegram-plane text-white text-xl">
+     </i>
+    </a>
+    <!-- Instagram -->
+    <a aria-label="Instagram" class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-pink-500 via-purple-600 to-yellow-400 hover:brightness-110 shadow-lg shadow-pink-500 glow-icon transition transform" href="https://www.instagram.com/cinta_store5" rel="noopener noreferrer" target="_blank">
+     <i class="fab fa-instagram text-white text-xl">
+     </i>
+    </a>
+    <!-- YouTube -->
+    <a aria-label="YouTube" class="flex items-center justify-center w-12 h-12 rounded-full bg-red-600 hover:bg-red-700 shadow-lg shadow-red-600 glow-icon transition transform" href="https://youtube.com/@yanzxplo1t" rel="noopener noreferrer" target="_blank">
+     <i class="fab fa-youtube text-white text-xl">
+     </i>
+    </a>
+    <!-- TikTok -->
+    <a aria-label="TikTok" class="flex items-center justify-center w-12 h-12 rounded-full bg-black hover:bg-gray-800 shadow-lg shadow-white glow-icon transition transform" href="https://tiktok.com/@terlaluberharap_2" rel="noopener noreferrer" target="_blank">
+     <img alt="TikTok logo black and white musical note icon" aria-hidden="true" class="invert" height="20" src="https://storage.googleapis.com/a1aa/image/7fb49692-6e7e-4fff-64fd-989661907134.jpg" width="20"/>
+    </a>
+   </div>
+  </div>
+ </body>
+</html>
